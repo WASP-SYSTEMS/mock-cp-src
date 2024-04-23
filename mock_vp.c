@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-char items[3][5];
+char items[3][10];
 
 int main()
 {
