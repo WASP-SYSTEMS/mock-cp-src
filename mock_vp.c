@@ -14,7 +14,7 @@ int main()
         buff[strcspn(buff, "\n")] = 0;
     }
     
-    
+    printf("done adding items\n");
     int j;
     printf("display item #:");
     scanf("%d", &j);
