@@ -7,12 +7,15 @@ int main()
 {
     char* buff;
     int i = 0;
-    for(i=0;i<3;i++){
+    do{
         printf("input item:");
         buff = &items[i][0];
-        fgets(buff, 4, stdin);
+        i++;
+        fgets(buff, 40, stdin);
         buff[strcspn(buff, "\n")] = 0;
-    }
+    }while(strlen(buff)!=0);
+    i--;
+
     
     printf("done adding items\n");
     int j;
