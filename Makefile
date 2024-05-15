@@ -1,7 +1,7 @@
 all:	mock
-CFLAGS = -fsanitize=address -fsanitize=undefined
+cflags = ${CFLAGS} -fsanitize=address -fsanitize=undefined
+CC ?= gcc
 mock:
-	gcc $(CFLAGS) -w -o mock_vp mock_vp.c 
-
+	${CC} $(cflags) -w -o mock_vp mock_vp.c
 clean:
 	rm mock_vp
