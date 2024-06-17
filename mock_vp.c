@@ -16,14 +16,13 @@ void func_a(){
 }
 
 void func_b(){
+    char *buff;
     int j;
     printf("display item #:");
     scanf("%d", &j);
-    if (j==0){
-        printf("item 0: apple\n");
-    }else{
-        printf("item 0: bicycle\n");
-    }
+    buff = &items[j][0];
+    printf("item %d: %s\n", j, buff);
+
 
 }
 
