@@ -2,7 +2,7 @@
 #include <string.h>
 #include <unistd.h>
 
-char items[3][5];
+char items[3][10];
 
 void func_a(){
     char* buff;
@@ -15,7 +15,6 @@ void func_a(){
         buff[strcspn(buff, "\n")] = 0;
     }while(strlen(buff)!=0);
     i--;
- 
 }
 
 void func_b(){
@@ -26,8 +25,6 @@ void func_b(){
     scanf("%d", &j);
     buff = &items[j][0];
     printf("item %d: %s\n", j, buff);
-
-
 }
 
 #ifndef ___TEST___
