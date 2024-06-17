@@ -17,6 +17,7 @@ void func_a(){
 
 void func_b(){
     char *buff;
+    printf("done adding items\n");
     int j;
     printf("display item #:");
     scanf("%d", &j);
