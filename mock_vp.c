@@ -17,24 +17,11 @@ void func_a(){
     i--;
 }
 
-void func_b(){
-    char *buff;
-    printf("done adding items\n");
-    int j;
-    printf("display item #:");
-    scanf("%d", &j);
-    buff = &items[j][0];
-    printf("item %d: %s\n", j, buff);
-}
-
 #ifndef ___TEST___
 int main()
 {
 
     func_a();
-
-    func_b();
-
 
     return 0;
 }
