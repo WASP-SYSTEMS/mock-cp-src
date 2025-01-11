@@ -11,8 +11,7 @@ void func_a(){
         printf("input item:");
         buff = &items[i][0];
         i++;
-        fgets(buff, 9, stdin);
-        if (i==3){buff[0]= 0;}
+        fgets(buff, 40, stdin);
         buff[strcspn(buff, "\n")] = 0;
     }while(strlen(buff)!=0);
     i--;
